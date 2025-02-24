@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Scrolling Message Panel */
+        .scrolling-panel {
+            background-color: #ffcc00;
+            color: #333;
+            font-size: 20px;
+            padding: 10px 0;
+            width: 100%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .scrolling-message {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Scrolling Panel -->
+<div class="scrolling-panel">
+    <div class="scrolling-message">
+        Admission is open for 2025! Apply now and secure your spot in our school!
+    </div>
+</div>
+
+<header>
+    <h1>Welcome to Our School</h1>
+    <p>Where Education Meets Excellence</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#events">Upcoming Events</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Our School</h2>
+        <p>Our school is dedicated to providing high-quality education to all students. With state-of-the-art facilities, experienced educators, and a focus on holistic development, we strive to create a learning environment where every student can excel.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <h2>Courses We Offer</h2>
+        <ul>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>English Literature</li>
+            <li>Social Studies</li>
+            <li>Physical Education</li>
+            <li>Art & Music</li>
+        </ul>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <h2>Upcoming Events</h2>
+        <p>Join us for our exciting upcoming events! From sports days to science exhibitions, there's always something happening at our school.</p>
+        <ul>
+            <li>Science Fair - March 10, 2025</li>
+            <li>Sports Day - April 5, 2025</li>
+            <li>Annual Concert - May 12, 2025</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to enroll? Get in touch with us:</p>
+        <p>Email: contact@ourschool.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <a href="mailto:contact@ourschool.com" class="cta-button">Email Us</a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Our School. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
